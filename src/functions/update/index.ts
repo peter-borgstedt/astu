@@ -16,8 +16,8 @@ const messages = [
 const colors = [blue, green, red, white, yellow];
 
 export default async (_cmd: any, _options: any) => {
-  log.info(`Updating ASTA, please wait couple of seconds...`);
-  const child = spawn('npm', ['install', 'asta', '-g']);
+  log.info(`Updating ASTU, please wait couple of seconds...`);
+  const child = spawn('npm', ['install', 'astu', '-g']);
 
   const getText = () => {
     const color = colors[Math.floor(colors.length * Math.random())];

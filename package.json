@@ -4,13 +4,16 @@
   "description": "A tool for generating AWS security tokens",
   "author": "Peter Borgstedt <peter.borgstedt@gmail.com",
   "license": "MIT",
-  "homepage": "https://github.org/peter-borgstedt/astu#readme",
+  "homepage": "https://github.com/peter-borgstedt/astu#readme",
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/peter-borgstedt/astu.git"
+    "url": "git+ssh://git@github.com:peter-borgstedt/astu.git"
   },
   "main": "./dist/bundle.js",
+  "bin": {
+    "astu": "./dist/bundle.js"
+  },
   "scripts": {
     "build": "./node_modules/.bin/webpack",
     "publish": "npm run lint && npm run test && run build && npm publish && npm run cleanup",

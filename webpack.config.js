@@ -1,19 +1,7 @@
 const path = require('path');
-const fs = require('fs');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
-
-/*
-const nodeModules = {};
-fs.readdirSync('node_modules')
-  .filter(function(x) {
-    return ['.bin'].indexOf(x) === -1;
-  })
-  .forEach(function(mod) {
-    nodeModules[mod] = 'commonjs ' + mod;
-  });
-*/
 
 module.exports = {
   target: 'node',
@@ -24,7 +12,7 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: 'awesome-typescript-loader',
+        loader: ['awesome-typescript-loader', 'shebang-loader'],
       },
     ],
   },

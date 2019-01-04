@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { chalk, log } from '@common';
 import { getPackageVersion, getPrecision } from '@common/npm';
 import { configure, generate, information } from '@functions';

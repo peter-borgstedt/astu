@@ -1,4 +1,4 @@
-# ASTA a.k.a. AWS security token utility
+# ASTU a.k.a. AWS security token utility
 A tool to help developers easily work with temporary security tokens between different accounts in AWS.
 
 ## Prerequisites
@@ -26,67 +26,67 @@ The *-temp profile is the temporary token that has been generated.
 ## Installation
 It is preferable to install it globally if there are many projects using it, but otherwise it can be installed within a project. However, note that the configuration is stored in the user home directory, so if there are several instances of it, they will all use the same configuration file.**
 ```bash
-> npm install -g asta
+> npm install -g astu
 ```
 
 ## Usage
 The command syntax is using the following pattern:
 ```bash
-> asta [options] [commands]
+> astu [options] [commands]
 ```
 
 ### Options
 > **--version ( or: -V )**
 > *Output the version number*
 > ```bash
-> > asta --version
+> > astu --version
 >```
 
 > **--verbose ( or: -v )**
 > *Add this to any command to see more details *
 > ```bash
-> > asta --version
+> > astu --version
 >```
 
 > **--help ( or: -h )**
 > *Output usage information*
 > ```bash
-> > asta --version
+> > astu --version
 >```
 
 ### Commands
 > ***(*** *""* ***)***
 > If no arguments are entered  the usage information will displayed (see options -h, --help)*
 > ```bash
-> > asta
+> > astu
 >```
 
 > ***( \<profile\> )***
 > *Generate a temporary token for a **specific** given master credential profile*
 > ```bash
-> > asta <profile>
+> > astu <profile>
 >```
 
 > **generate ***( or: g )*****
 > *Generate temporary token for **all configured** master credential profiles (see **config**)*
 > ```bash
-> > asta [options] g|generate
+> > astu [options] g|generate
 >```
 
 > **information ***( or: i )*****
 > *Details of current environment and settings*
 > ```bash
-> > asta [options] i|information
+> > astu [options] i|information
 >```
 
 > **config ***( or: c )*****
 > *Select default profile and master credentials*
 > ```bash
-> > asta [options] c|config
+> > astu [options] c|config
 >```
 
 > **update ***( or: u )*****
 > *The tool will indicate when running if any update is available, if so, this command will update to latest version.*
 > ```bash
-> > asta [options] u|update
+> > astu [options] u|update
 >```

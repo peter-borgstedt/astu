@@ -1,0 +1,39 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "baseUrl": ".",
+        "rootDir": ".",
+        "target": "es2015",
+        "module": "commonjs",
+        "outDir": "./dist",
+        "declaration": false,
+        "experimentalDecorators": true,
+        "strict": true,
+        "noUnusedLocals": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "paths": {
+            "@common": ["src/common"],
+            "@common/*": ["src/common/*"],
+            "@functions": ["src/functions"],
+            "@functions/*": ["src/functions/*"]
+        },
+        "typeRoots": [
+            "node_modules/@types",
+            "types"
+        ],
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "test/**/*"
+    ],
+    "lib": [
+        "es2017",
+        "dom",
+        "esnext"
+    ]
+}

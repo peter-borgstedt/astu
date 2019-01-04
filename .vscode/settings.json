@@ -1,0 +1,16 @@
+{
+    "editor.tabSize": 2,
+    "prettier.singleQuote": true,
+    "prettier.printWidth": 120,
+    "editor.insertSpaces": true,
+    "files.eol": "\n",
+    "tslint.enable": true,
+    "tslint.jsEnable": true,
+    "tslint.autoFixOnSave": true,
+    "window.zoomLevel": 0,
+    "tslint.exclude": [
+        "test/*",
+        "node_modules",
+        "dist"
+    ]
+}

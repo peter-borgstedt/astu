@@ -24,7 +24,7 @@ output = json
 The *-temp profile is the temporary token that has been generated.
 
 ## Installation
-It is preferable to install it globally if there are many projects using it, but otherwise it can be installed within a project. However, note that the configuration is stored in the user home directory, so if there are several instances of it, they will all use the same configuration file.**
+It is preferable to install it globally if there are many projects using it, but otherwise it can be installed within a project. However, note that the configuration is stored in the user home directory, so if there are several instances of it, they will all use the same configuration file.
 ```bash
 > npm install -g astu
 ```

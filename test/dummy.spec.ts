@@ -1,7 +1,7 @@
 import { assert } from 'chai';
 
-describe('', () => {
-  it('', () => {
+describe('dummy', () => {
+  it('dummy', () => {
     assert.isFunction(() => { /**/ }, 'oh no!');
   });
 });

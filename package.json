@@ -19,7 +19,7 @@
     "publish": "npm run lint && npm run test && run build && npm publish && npm run cleanup",
     "cleanup": "rm -r dist",
     "start": "export TS_NODE_FILES=true && ts-node -r tsconfig-paths/register src/index.ts",
-    "test": "export TS_NODE_FILES=true && ./node_modules/.bin/nyc ./node_modules/.bin/mocha -r ts-node/register -r test/*.ts",
+    "test": "export TS_NODE_FILES=true && ./node_modules/.bin/nyc ./node_modules/.bin/mocha -r ts-node/register -r tsconfig-paths/register test/**/*.ts",
     "lint": "./node_modules/tslint/bin/tslint **/*.ts",
     "lintfix": "./node_modules/tslint/bin/tslint --fix **/*.ts",
     "sort-package-dependencies": "npm remove -S dummy; npm remove -D dummy"
